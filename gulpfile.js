@@ -13,6 +13,7 @@ gulp.task('default', ['webpack', 'styles', 'browser-sync'], () => {
 			'./public/**/*',
 			'./public/*',
 			'./resources/views/*',
+			'./resources/views/**/*',
 			'!public/js/**/.#*js',
 			'!public/css/**/.#*css'
 		])
@@ -27,6 +28,7 @@ gulp.task('watch-proxy', ['styles', 'browser-sync-proxy'], () => {
 			'./public/**/*',
 			'./public/*',
 			'./resources/views/*',
+			'./resources/views/**/*',
 			'!public/js/**/.#*js',
 			'!public/css/**/.#*css'
 		])

@@ -1,0 +1,72 @@
+@layout('layouts/main')
+
+@section('title')
+Epic Loots | All Products
+@endsection
+
+@section('content')
+<section class="content-area products-all-page">
+  <div class="filter-section">
+    <div class="filter">
+      <input type="checkbox" id="brand-options" class="toggle"/>
+      <label class="title" for="brand-options">Brands</label>
+      <div class="content">
+        <div class="brands filter-options">
+          <div class="option">Dell</div>
+          <div class="option">Lenovo</div>
+          <div class="option">MSI</div>
+          <div class="option">ASUS</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter">
+      <input type="checkbox" id="categories-options" class="toggle"/>
+      <label class="title" for="categories-options">Categories</label>
+      <div class="content">
+        <div class="categories  filter-options">
+          <div class="option">Desktops</div>
+          <div class="option">Laptops</div>
+          <div class="option">Keyboards</div>
+          <div class="option">Mouses</div>
+          <div class="option">Earbuds & Headphones</div>
+          <div class="option">Computer Components</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter">
+      <input type="checkbox" id="price-options" class="toggle"/>
+      <label class="title" for="price-options">Price</label>
+      <div class="content">
+        <div class="price filter-options">
+          <input type="text" class="option" name="min-price" placeholder="min">
+          <input type="text" class="option" name="max-price" placeholder="max">
+        </div>
+      </div>
+    </div>
+    <button>Filter</button>
+  </div>
+  <div class="all-prodcuts-grid">
+    @each(product in products)
+    <div class="product-wrap">
+
+      <div class="product">
+        <div class="circle">
+          <img src="/img/products/alienware-51m.png">
+        </div>
+      </div>
+      <div class="title">Alienware 51m</div>
+      <div class="price">$1500</div>
+    </div>
+    @endeach
+
+  </div>
+</section>
+@endsection
+
+@section('javascript')
+<script>
+console.log('Hey Guys.')
+</script>
+@endsection
