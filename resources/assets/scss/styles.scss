@@ -3,6 +3,7 @@
 @import "pages/home";
 @import "pages/about";
 @import "products/all";
+@import "account/login_register";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -213,6 +214,24 @@ header{
 
 .box-container{
   background: white;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 80px 20px;
+}
+form{
+  input[type="password"], input[type="email"],input[type="text"]{
+    width: 100%;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid rgba(6, 9, 52, 0.54);
+  }
+  button{
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #0E94EE;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
 }

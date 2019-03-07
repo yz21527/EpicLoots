@@ -21,3 +21,10 @@ Route.get('/', 'PageController.home')
 Route.get('/about', 'PageController.about')
 
 Route.get('/products', 'ProductController.index')
+
+Route.get('/products/new-arrivals', 'ProductController.newArrivals')
+
+//User Authentication
+Route.get('/register', 'UserController.register')
+
+Route.get('/login', 'UserController.login')
