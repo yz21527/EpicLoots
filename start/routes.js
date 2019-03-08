@@ -22,6 +22,8 @@ Route.get('/about', 'PageController.about')
 
 Route.get('/products', 'ProductController.index')
 
+Route.get('/:brand/:subcategory/:model', 'ProductController.show')
+
 Route.get('/products/new-arrivals', 'ProductController.newArrivals')
 
 //User Authentication
