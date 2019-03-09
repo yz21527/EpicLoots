@@ -1,0 +1,32 @@
+@layout('layouts/main')
+
+@section('title')
+Epic Loots | Account
+@endsection
+
+
+@section('content')
+<section class="content-area account-page">\
+  <div class="container">
+    <div class="box-container">
+      <h1>Account</h1>
+      <hr>
+      <div class="checkout-grid">
+        <div class="forms">
+          <h3>Welcome to your account!</h3>
+        </div>
+          <div class="sub-menu">
+            @include('account/sub-menu')
+          </div>
+      </div>
+    </div>
+  </section>
+  @endsection
+
+
+
+  @section('javascript')
+  <script>
+  console.log('Hey Guys.')
+</script>
+@endsection

@@ -4,8 +4,10 @@
 @import "pages/about";
 @import "products/all";
 @import "products/single";
+@import "account/account";
 @import "account/login_register";
 @import "cart/checkout";
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -19,6 +21,7 @@ body {
 }
 
 header{
+  background: #E3E8EC;
   position: fixed;
   display: flex;
   justify-content: space-between;
