@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "reset";
+/*@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";*/
 @import "pages/home";
 @import "pages/about";
 @import "products/all";
@@ -47,6 +50,9 @@ header{
     font-size: 1rem;
     text-transform: uppercase;
     padding: 20px 0;
+    #CartBtnRoot{
+      display: inline-block;
+    }
     a{
       color: #484C4F;
       padding-right: 15px;
@@ -107,6 +113,7 @@ header{
   .cart-title{
     width: 100px;
     max-width: 100px;
+    margin-right: 100px;
     position: relative;
     .title{
       position: absolute;
@@ -122,6 +129,7 @@ header{
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    padding-left: 30px;
     .item-container{
       width: 200px;
       display: inline-block;
@@ -137,7 +145,7 @@ header{
       padding: 30px 30px;
       img{
         position: absolute;
-        left: -50px;
+        left:-45px;
         width: 80%;
         transform: rotate(5deg);
       }
